@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!--added script for icons-->
+    <script src="https://kit.fontawesome.com/320d82d9a8.js" crossorigin="anonymous"></script>
+     <!---script2 for login before accessing courses-->
+     <script src="script2.js" defer></script>
+</head>
+<body>
+<!--header section begin-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/jblogo.jpeg" alt="logo" class="logo"></a> 
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headerabout.html#about">About me</a></li>
+                    <li><a href="register.php">Register</a></li>
+                   
+                    <li><a href="courselogin.php">Courses</a></li>
+                    <li><a href="cv.html#services">CV</a></li>
+                    <li><a href="cv.html#contact">Contacts</a></li>
+                <!--cross icon-->    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!--menu icon-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        <!-- add new div tag-->
+        <div class="header-text">
+            <p>Congrats!, you are in the CV & Contacts page,</p>
+            <h1>You can download <span>my CV below</span><br></h1>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <main>
+        <section id="contactz">
+            <h1>CV & Contacts:</h1>
+            <p>The detailed CV and contactsinfo will be displayed below:</p>
+        </section>
+    </main>
+
+
+
+<!--services begin-->
+<div id="services">
+    <div class="container">
+        <!--adding subtitle-->
+        <h1 class="sub-title">CV(Curriculum Vitae):</h1>
+        <div class="services-list">
+            <!--add div tag and their services h and their p descriptions, and link -->
+
+            <div>
+                <!--where to display the icon-->
+                <i class="fa-solid fa-code"></i>
+                <h2>1. Education</h2>
+                <p>Bachelor of Science in Computer Science
+                    University of Dar es Salaam, CoICT
+                    Expected Graduation: May 2024
+                    
+                    Currently pursuing a Bachelor of Science in Computer Science at the University of Dar es Salaam, focusing on software engineering and data science. Proficient in Java, Python, SQL, and experienced in database management, algorithm design, and software development methodologies. Actively involved in coding competitions and hackathons, enhancing problem-solving skills and teamwork.</p>
+                <a href="https://cse.udsm.ac.tz/programs/program-details/bsc-in-computer-science-%28bsc-cs%29">Click here</a> 
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>2. Technical Skills</h2>
+                <p> Programming: Java, Python, C++
+                    Web Development: HTML/CSS, JavaScript, React.js
+                    Databases: SQL, MongoDB
+                    Tools: Git, Docker, Linux
+                
+                Strong technical proficiency in Java, Python, C++, and adept at developing responsive web interfaces with HTML, CSS, JavaScript, and React.js. Skilled in managing databases using SQL and MongoDB for efficient data handling. Experience with Git for version control and Docker for software deployment and maintenance.</p>
+                <a href="https://learningnetwork.cisco.com/s/all-media?ccid=sem&dtid=mediabuy&oid=sem&gad_source=1&gclid=CjwKCAjwmrqzBhAoEiwAXVpgolLE7Yh84ypllPOl5n-TwQ6UlrZMyw7g2W3kLWWf4-F_CmD8Kc-sWxoCBIQQAvD_BwE&gclsrc=aw.ds">Click here</a>
+            </div>
+            
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>3. Projects</h2>
+                <p>Online Bookstore Web App
+
+                    Developed a full-stack online bookstore using React.js and Node.js.
+                    Integrated user authentication, book catalog management, and MongoDB database for efficient data handling.
+                    Collaborated with a team to ensure project milestones and conducted thorough testing to ensure security and performance.
+                
+                Developed a full-stack online bookstore using React.js and Node.js, showcasing expertise in front-end and back-end development. Collaborated effectively in a team to implement features like user authentication and book management, ensuring a scalable and secure e-commerce solution.</p>
+                <a href="https://www.geeksforgeeks.org/computer-science-projects/">Click here</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--services section end-->
+
+
+<!--contact section begin-->
+<div id="contact">
+    <div class="container">
+        <!--columns and rows-->
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>johnboscocharles@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+255 672 66 33 63</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/pulse/self-learning-websites-computer-science-engineers-indraja-siripuram"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tz.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="downloadcv/html5_tutorial.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+            <form action="contact.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" id="email"placeholder="Your email" required>
+                <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2" name="submitc">Submit</button>
+            </form>    
+        </div>
+
+        </div>
+    </div>
+<!--copyright section begin-->
+
+<section id="contacts">
+    <h1>Important info!,on Contacts & CV page:</h1>
+    <p>Your contact details and your message should be clear and unambiguous</p>
+</section>
+</main>
+
+<footer>
+<p>For more information contact me via LinkedIn</p>
+</footer>
+
+<!--copyright section begin-->
+<div class="copyright">
+    <p>Copyright &copy; made by <i class="fa-solid fa-heart"></i> Johnbosco 2024</p>
+</div>    
+<!--copyright section begin-->
+</div>
+<!--contact section end-->
+
+<!-- Add a container for the login form -->
+<div id="loginContainer"></div>
+
+
+
+
+<script>
+//about section js code begin
+var tablinks = document.getElementsByClassName('tab-links'); //for the tab-links class
+var tabcontents = document.getElementsByClassName('tab-contents'); //for the tab-contents class
+//define the open tab function from the html
+function opentab(tabname){
+    //should hide the active color on active tab and also hide contents when not clicked
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+//to display other contents when clicked other the active one
+event.currentTarget.classList.add("active-link");  
+//displaying the content of the the displaying active link
+document.getElementById(tabname).classList.add("active-tab");//tab name from tab titles area.  
+}
+//about section js code end
+</script> 
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+//function to open and close menu
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector("form");
+        var emailInput = form.querySelector("#email");
+
+        form.addEventListener("submit", function(event) {
+            if (!emailInput.validity.valid) {
+                alert("Please enter a valid email address.");
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

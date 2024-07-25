@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*background color*/
+body{
+    background-color: #000000;
+    color: #fff;
+}
+
+/*container div tag*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/_150f477a-23e0-4cf1-9610-fe1ac77707ec.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+/*nav bar to hold the links*/
+nav{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*logo sizing*/
+.logo{
+    width: 140px;
+}
+
+/*links from vertical to horizontal*/
+nav ul li{
+display: inline;
+list-style: none;
+margin: 10px 20px;
+
+}
+
+/*remove underline on the main tabs*/
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    position: relative;
+}
+
+/*hover effect on the links*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/*hover effect on mouse move*/
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*css to new div tag*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+/*css to new div and h1tag titles*/
+.header-text h1{
+font-size: 60px;
+margin-top: 20px;
+}
+
+/*css to new div and h1 and span tag*/
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/*about id used, css*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+/*css to rows*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*css to 1st column*/
+.about-col-1{
+    flex-basis: 35%; 
+}
+
+/*css to 1st column*/
+.about-col-1 img{
+   width: 100%;
+   border-radius: 15px;
+}
+
+/*css to 2nd column*/
+.about-col-2{
+    flex-basis: 60%;
+}
+
+/*css to subtitle or about me*/
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*css to portion below description about me*/
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+/*css to portion tablinks in the portion below*/
+.tab-links{
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+/*hover effect to css to portion tablinks in the portion below*/
+.tab-links::after{
+    content: '';
+    width: 0;   /*it will make content hidden, so u also need 100%,add class name to do this called active-link*/
+    height: 3px;  /*as in the nav bar*/
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/*it will make content hidden, so u also need 100%,add class name to do this called active-link*/
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+/*css to tab contents*/
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+/*css to tab contents and span tag*/
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+/*css to hide content of the table contents which are not clicked to display the content*/
+.tab-contents{
+    display: none;
+}
+
+/*a class added to show the current active tab*/
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*services*/
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    /*anything in the service list will be displayed as grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/*services-list css and its div*/
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    /*added to allow transition effect added below*/
+    transition: background 0.5s, transform 0.5s;
+}
+
+/*services-list css change the icons sizes*/
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/*services-list css decorate titles near the icons*/
+.services-list div i h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/*services-list css decorate links near the icons*/
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*hover effect and transform effect on the services-list css decorate with the icons*/
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/*portifolio*/
+#portifolio{
+    padding: 50px 0;
+}
+
+/*portifolio images arrangement into grid*/
+.work-list{
+    /*anything in the work, image list will be displayed as grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/*css for work class*/
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*css for work class image*/
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s; /*css to zoom effect on image*/
+}
+
+/*css for work layer class added for image description for text to display over the img*/
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center; 
+    font-size: 14px; 
+
+    transition: height 0.5s;
+}
+
+/*css for added img description*/
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/*css for added img description's link a tag*/
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*css for added img description's content, make height initial to zero*/
+.work:hover img{
+    transform: scale(1.1);
+}
+
+/*css for added img description's content, display back since it was hidden*/
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+ }
+
+/*hover on the link added below my work area*/
+.btn:hover{
+    background: #ff004f;
+ }
+
+/*css for contact*/
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+/*css for icons added in contact*/
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/*css for social icons */
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+/*to hover effect on social icons add this in begin*/
+    transition: transform 0.5s;
+}
+
+/*hover effect on the css for social icons */
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/*moving the download cv button left */
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+/*contact right form css */
+.contact-right form{
+    width: 100;
+}
+
+/*form input and form textarea css */
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/*form button closer to form css */
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*copyright css */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*copyright icon change css */
+.copyright i{
+    color: #ff004f;
+}
+
+/*linking pages and hyperlinks in the nav bar contact home aboutme */
+html{
+    scroll-behavior: smooth;
+}
+html#aboutme{
+    scroll-behavior: smooth;
+}
+
+
+
+/*responsive web design for the site using the css media queries */
+/*css for small screen*/
+/*hide menu button and cross button for bigger screen, use icon class*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url(images/_150f477a-23e0-4cf1-9610-fe1ac77707ec.jpeg);
+  }
+
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  /*hide menu button and cross button for smaller screen*/
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    }
+/*add menu item,hide menu items untill when clicked for small screen*/
+ nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px; /*hide side bar, width is 200, -200 will be hidden on the right handside*/
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    /*time delay for the side menu, to avoid it moving and popping instant*/
+    transition: right 0.5s;
+ }
+
+ /*arrange the li in ul bar*/
+ nav ul li{
+    display: block;
+    margin: 20px;
+ }
+
+/*position for the cross icon in bar*/
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+ 
+/*size of about me title*/
+.sub-title{
+    font-size: 40px;
+}
+
+/*pic near about me size*/
+.about-col-1, .about-col-2{
+    flex-basis: 100%;
+}
+
+/*pic and about me distance*/
+.about-col-1{
+    margin-bottom: 30px;
+}
+
+/*font of about col2*/
+.about-col-2{
+    font-size: 14px;
+}
+
+/*font on below aboutme*/
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.contact-left, .contact-right{
+    flex-basis: 100%;
+}
+
+.copyright{
+    font-size: 14px;
+}
+
+}
+
+
+#courses {
+    display: none;
+}
+
+#courseTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#courseTable th, #courseTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#courseTable th {
+    background-color: #2b0bdd;
+}
+
+
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 5px;
+}
+
+.error-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+

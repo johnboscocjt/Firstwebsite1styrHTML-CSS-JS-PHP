@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!--added script for icons-->
+    <script src="https://kit.fontawesome.com/320d82d9a8.js" crossorigin="anonymous"></script>
+     <!---script2 for login before accessing courses-->
+     <script src="script2.js" defer></script>
+</head>
+<body>
+<!--header section begin-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/jblogo.jpeg" alt="logo" class="logo"></a> 
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="headerabout.html#about">About me</a></li>
+                    <li><a href="register.php">Register</a></li>
+                    
+                    <li><a href="courselogin.php">Courses</a></li>
+                    <li><a href="cv.html#services">CV</a></li>
+                    <li><a href="cv.html#contact">Contacts</a></li>
+                <!--cross icon-->    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!--menu icon-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- add new div tag-->
+            <div class="header-text">
+                <p>Excited already! ?, you are in the About Me page,</p>
+                <h1>Enjoy to <span>get to know</span> <br> Me!!!</h1>
+            </div>
+
+        </div>
+
+    </div>
+<!--header section end-->  
+    
+<!--about section begin-->
+    <div id="about">
+        <div class="container"></div>
+        <!--rows needed, left pic, right text-->
+        <div class="row">
+         <div class="about-col-1">
+             <img src="images/pexels-ashutoshsonwani-1839564.jpg">
+         </div>
+         <div class="about-col-2">
+             <h1 class="sub-title">About me</h1>
+             <!--textdescription for about me-->
+            <p>My name is Johnbosco Charles, a dedicated student from the University of Dar es Salaam (UDSM), pursuing my studies at the College of Information and Communication Technology (CoICT). UDSM, renowned for its excellence in computer science education, has provided me with a robust foundation in technology, equipping me with the skills to innovate and contribute meaningfully to the field. I am passionate about technology and its transformative potential, particularly in Tanzania. Participating in hackathons both within and outside Tanzania has sharpened my problem-solving abilities and fueled my ambition to leverage technology for positive change. My goal is to raise awareness across all age groups and professions about the benefits and opportunities technology offers, aiming to catalyze socio-economic development in Tanzania. Collaborating with like-minded individuals and organizations, I aspire to harness collective expertise and drive technological advancements that address local challenges and elevate Tanzania's position in the global tech landscape.</p>
+
+             <!--below the textdescription for about me-->   
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p><!--a class added to show the current active tab,also onclick to opemtabs--> 
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('program')">Program enrolled</p>
+                <p class="tab-links" onclick="opentab('careergoals')">Career Goals</p>
+            </div>   
+            <!--displaying tab-content 1--> 
+            <div class="tab-contents active-tab" id="skills"><!--a class added to show the current active tab--> 
+                <ul>
+                    <li><span>Ethical hacking and Cybersecurity</span><br>Ethical hacking and cybersecurity are crucial skills for safeguarding digital systems. Ethical hackers assess and secure computer networks by identifying vulnerabilities, while cybersecurity involves implementing measures to protect against unauthorized access and attacks. These skills are essential for maintaining the security and integrity of data in today's interconnected world.</li>
+                    <li><span>Full stack web development</span><br>Full stack web development involves proficiency in both front-end and back-end development, enabling developers to create fully functional websites and applications. It encompasses building user interfaces with HTML, CSS, and JavaScript on the front end, while managing databases and server-side logic using languages like Python, Node.js, or PHP on the back end. Full stack developers possess a comprehensive understanding of web architecture, API integration, and version control systems like Git. Their expertise spans the entire development process, from initial planning and design to deployment and maintenance, making them versatile and capable of delivering robust, scalable web solutions.</li>
+                    <li><span>Artificial Intelligence and IoT</span><br>Artificial Intelligence (AI) and Internet of Things (IoT) represent transformative technologies driving innovation across various industries. AI involves the simulation of human intelligence by machines, enabling tasks like natural language processing, image recognition, and decision-making based on data analysis. IoT, on the other hand, connects everyday devices to the internet, allowing them to collect and exchange data for automated processes and remote monitoring. Together, AI and IoT create smart systems that enhance efficiency, productivity, and decision-making in sectors such as healthcare, manufacturing, and smart cities. They hold the potential to revolutionize how we interact with technology, offering new opportunities for automation, predictive analytics, and personalized experiences in our interconnected world.</li>
+                </ul>
+            </div>   
+            <!--displaying tab-content 2--> 
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Hacking</span><br>CISCO cybersecurity and Forensics</li>
+                    <li><span>Full stack web development in USA</span><br>META company</li>
+                    <li><span>AI training model in Canada</span><br>Open AI, Canada</li>
+                    
+                </ul>
+            </div>   
+            <!--displaying tab-content 3--> 
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>UDSM</span><br>Bachelor of Science in Computer Science</li>
+                    <li><span>Havard</span><br>Bachelor of Artificial Intellegence, Cybersecurity and IoT</li>
+                    <li><span>MIT</span><br>Masters in Computer Science</li>
+                </ul>
+            </div>   
+            
+            <!--displaying tab-content 4--> 
+            <div class="tab-contents" id="program">
+                <ul>
+                    <li><span>Enrolled in UDSM university</span><br>Bachelor of Science in Computer Science</li>
+                    <li><span>Enrollment info:</span><br>I am currently pursuing a Bachelor of Science in Computer Science at the University of Dar es Salaam, specifically at the College of Information and Communication Technology (CoICT). I chose this program due to my passion for technology and my desire to develop innovative solutions to real-world problems. My favorite course so far has been Software Engineering, which has provided me with a strong foundation in designing and implementing software systems. I actively participate in a discussion group where we collaborate on projects and share knowledge to enhance our learning experience.</li>
+                    <li><span>Sponsor</span><br>My degree is generously sponsored by my parents, whose support has enabled me to focus fully on my studies and academic pursuits.</li>
+                </ul>
+            </div>   
+             <!--displaying tab-content 3--> 
+             <div class="tab-contents" id="careergoals">
+                <ul>
+                    <li><span>Goals:</span><br>Upon completing my degree, I aspire to become a software developer specializing in web and mobile applications. My career goal is to leverage technology to drive positive change in Tanzania, raising awareness about the potential of tech innovations and working collaboratively with others to solve pressing issues in our community. I aim to create innovative software solutions that address local challenges, improve education, and enhance healthcare delivery. Additionally, I hope to mentor young aspiring technologists, fostering a culture of creativity and problem-solving. Ultimately, I envision contributing to Tanzania's development as a hub for technological advancement, where technology not only supports economic growth but also enhances the quality of life for all citizens.</li>
+    
+                </ul>
+            </div>   
+        </div>   
+        
+
+         </div>
+        </div>
+
+    </div>
+
+<!--copyright section begin-->
+<div class="copyright">
+    <p>Copyright &copy; made by <i class="fa-solid fa-heart"></i> Johnbosco 2024</p>
+</div>    
+<!--copyright section begin-->
+</div>
+
+
+<!-- Placeholder for dynamically loaded login form -->
+<!-- Add a container for the login form -->
+<div id="loginContainer"></div>
+
+
+<script>
+//about section js code begin
+var tablinks = document.getElementsByClassName('tab-links'); //for the tab-links class
+var tabcontents = document.getElementsByClassName('tab-contents'); //for the tab-contents class
+//define the open tab function from the html
+function opentab(tabname){
+    //should hide the active color on active tab and also hide contents when not clicked
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+//to display other contents when clicked other the active one
+event.currentTarget.classList.add("active-link");  
+//displaying the content of the the displaying active link
+document.getElementById(tabname).classList.add("active-tab");//tab name from tab titles area.  
+}
+//about section js code end
+</script> 
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+//function to open and close menu
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
